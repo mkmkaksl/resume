@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: rgba(147,230,147, 0.3);
+  margin: 0;
+}
+header {
+  display: flex;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+header .summary {
+  margin: 30px;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: rgba(147, 230, 147, 0.2);
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px rgb(147,230,147);
+  flex-wrap: wrap;
+}
+header .summary .career {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+header .summary .Name {
+  font-variant: small-caps;
+}
+header img {
+  min-height: 300px;
+  max-height: 40vh;
+  border-radius: 75%;
+  box-shadow: 10px 10px 10px gray;
+}
+main .contact-work {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+main .skill-interest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .contact-info {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 40px;
+  padding: 12px;
+  font-weight: 600;
+  background-color: rgba(147, 230, 147, 0.2);
+  box-shadow: 3px 2px 5px rgb(147,230,147);
+  border-radius: 50px;
+  min-width: 100px;
+  max-width: 400px;
+}
+main .work-experience, main .courses, main .skills, main .interests, main .objective {
+  min-width: 200px;
+  max-width: 500px;
+  font-size: 24px; 
+  border-radius: 50px;
+  padding: 10px;
+  padding-top: 30px;
+  margin: 5px 5px 10px 20px;
+  background-color: rgba(147, 230, 147, 0.2);
+  box-shadow: 3px 2px 5px rgb(147,230,147);
+}
+main .objective {
+  min-height: 300px;
+}
+main li {
+  list-style-type: none;
+}
+main li::before {
+  content: '--\00BB';
+  color: blue;
+  font-size: 20px;
+}
+main a {
+  text-decoration: none;
+  font-size: 120%;
+  color: darkgreen;
+  transition: color ease-in 400ms, border linear 400ms;
+}
+main a:hover {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
